@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.container .top-bar{
+    background-color: #00d2d3;
+    width: 100%;
+    height: 2.3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5rem;
+}
+.top-bar a{
+    color: #fff;
+}
+.top-bar a:not(:last-of-type){
+    margin-right: 2rem;
+}
+
+
+/* navbar */
+
+.container .navbar{
+    width: 100%;
+    height: 5rem;
+    background-color: #222f3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 2rem;
+    overflow-x: hidden;
+}
+.navbar .left_links{
+    display: flex;
+}
+.navbar .image{
+    margin-right: 3rem;
+}
+.navbar .links{
+    display: flex;
+    align-items: center;
+}
+.navbar .links ul {
+    display: flex;
+}
+
+.navbar .links ul li a{
+    color: #fff;
+}
+.navbar .links ul li:not(:last-of-type){
+    margin-right: 1rem;
+}
+.right-tabs{
+    display: flex;
+    align-items: center;
+}
+.right-tabs .search{
+    position: relative;
+}
+.right-tabs .search input{
+   padding: 0.5rem;
+   padding-right: 1rem;
+   border-radius: 5px;
+   outline: none;
+   border: 0;
+}
+
+.right-tabs .search img{
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    margin-left: 0;
+}
+.right-tabs img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* navbar ends  */
+
+/* main Screen */
+
+.mainScreen{
+    background: url('./Images/bandeau_header_hygiene.jpg') no-repeat;
+    background-size: 100%;
+    height: 81%;
+    width: 100%;
+    padding-top: 13rem;
+    padding-left: 8rem;
+    padding-right: 5rem;
+    position: relative;
+    z-index: 111;
+    overflow-x: hidden;
+}
+.mainScreen::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 11;
+}
+.mainScreen p, .mainScreen h1, .mainScreen .small_tabs .small_info{
+    color: #fff;
+    z-index: 11;
+}
+.mainScreen p{
+    font-weight: bold;
+    display: block;
+}
+.mainScreen .main_heading{
+    z-index: 999;
+    color: #ffff;
+}
+.mainScreen h1{
+    width: 15rem;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    display: block;
+}
+.small_tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+
+}
+.small_tabs .small_info{
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+.small_tabs .small_info img{
+    margin-right: 1rem;
+}
+.small_tabs .small_info .text{
+    display: flex;
+    flex-direction: column;
+}
+.small_tabs .small_info .text h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.small_tabs .small_info .text p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* main screen ends  */
+
+/* mainImageSection  */
+
+.mainImageSection{
+    width: 100%;
+    height: 10rem;
+    background-color: #00e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainImageSection .imageTextWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imageTextWrapper .imageContainer{
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.imageTextWrapper:not(:last-of-type){
+    margin-right: 7rem;
+}
+.imageContainer img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+.imageTextWrapper p{
+    color: #fff;
+}
+
+/* .mainImageSection ends  */
+
+/* personalBlock */
+
+.personalBlock{
+    width: 100%;
+    padding-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+.personalBlock h3{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.imageBlocks{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.imageBlocks .imageBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imageBlock:not(:last-of-type){
+    margin-right: 7rem;
+}
+.personalBlock .paragraph{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.personalBlock .paragraph p{
+    text-align: center;
+    width: 41%;
+}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.personalBlock .button button{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(43, 43, 43);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .personalBlock ends  */
+
+/* article section  */
+
+.articleSection{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.articleSection h3{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.articleSection .articleImages{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.articleImages .articleImage{
+    width: 19rem;
+    height: 15rem;
+    background: url('./Images/blog_1.jpg') no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    position: relative;
+}
+.articleImage.arti2{
+    background: url(./Images/blog_2.jpg);
+    object-fit: contain;
+}
+.articleImage.arti3{
+    background: url(./Images/blog_3.jpg);
+    object-fit: contain;
+}
+.articleImage .bottomBar{
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 2rem;
+}
+.articleImage .bottomBar::before{
+    content: '';
+    height: 100%;
+    width: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e84393;
+}
+.articleImage:not(:last-of-type){
+    margin-right: 1rem;
+}
+.bottomBar h5{
+    margin-bottom: 0.5rem;
+}
+.articleSection .button button{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(43, 43, 43);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .articleSection ends  */
+
+/* bigImageSection */
+
+.bigImageSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right, #eb9eae, #f5b8c7);
+    padding:3rem 0;
+}
+.bigImageSection img{
+    width: 20rem;
+    height: 15rem;
+}
+.bigImageSection .textContain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textContain h1{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.textContain p{
+    width: 25rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.textContain .button button{
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    color: #f5b8c7;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* .bigImageSection ends  */
+
+.contextSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.contextSection .contextText{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.contextText .context{
+    display: flex;
+    flex-direction: column;
+}
+.context h3 span{
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.context p{
+    width: 21rem;
+}
+.contextText .context:not(:last-of-type){
+    margin-right: 4rem;
+}
+.contextSection .button button{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(43, 43, 43);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .contextSection ends  */
+
+/* footer  */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: #2d3436;
+    width: 100%;
+}
+.footer img{
+    width: 10rem;
+    height: 5rem;
+    margin-right: 4rem;
+}
+.footer .propos{
+    display: flex;
+    flex-direction: column;
+}
+.propos h4{
+    color: #ffff;
+    margin-bottom: 1rem;
+}
+.propos ul li{
+    margin-bottom: 0.2rem;
+}
+.propos ul li a{
+    color: rgb(108, 108, 108);
+}
+.propos:not(:last-of-type){
+    margin-right: 4rem;
+}
+
+/* footer ends  */
+
+/* footer Bar  */
+
+.footerBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(28, 28, 28);
+    padding: 0.7rem 0;
+}
+.footerBar p{
+    color: #fff;
+    opacity: 0.5;
+}
