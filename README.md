@@ -1,3 +1,3 @@
 # Manureva-submission
 Live Website 
- https://manureva-submission.netlify.app
+ https://pushpakraut.github.io/Manureva-submission/
